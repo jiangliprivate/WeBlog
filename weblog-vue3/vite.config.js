@@ -11,6 +11,8 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
+    port: 80,
+    https: false,
     proxy: {
       '/api': {
         target: 'http://localhost:8081',
